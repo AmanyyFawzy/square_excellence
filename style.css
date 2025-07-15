@@ -694,6 +694,9 @@ html[dir="ltr"] .fa-angles-left {
     right: 3%;
     transform: translateX(50%);
   }
+    html,body{
+    overflow-x: hidden !important;
+  }
 }
 
 /* Responsive Styles */
@@ -724,6 +727,9 @@ html[dir="ltr"] .fa-angles-left {
   .footer-col h3::after {
     right: 10%;
     transform: translateX(50%);
+  }
+    html,body{
+    overflow-x: hidden !important;
   }
 }
 
@@ -781,5 +787,8 @@ html[dir="ltr"] .fa-angles-left {
   .copyright {
     width: 100%;
     padding: 1rem;
+  }
+  html,body{
+    overflow-x: hidden !important;
   }
 }
