@@ -27,15 +27,15 @@
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <img src="./images/logoo.png" alt="logo" class="logo"/>
+            <img src="./images/logoo.png" alt="logo" class="logo img-fluid"/>
 
-            <div class="text-light fs-6 d-flex flex-column mx-3 my-2 logo-text d-none d-lg-flex">
+            <div class="text-light fs-6 flex-column mx-3 my-2 logo-text d-none d-xl-flex">
                 <span class="blue-txt">شركة مربع الامتياز المحدودة</span>
                 <span class="blue-txt">SQUARE EXCELLENCE CO.LTD</span>
                 <span class="mint-txt">where Precision Meets Vision حيث تلتقي الدقة مع الرؤية</span>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -73,13 +73,13 @@
         
         <!-- محتوى النص -->
         <div class="col-md-7 text-light">
-            <h1 class="fw-bold mb-3" data-lang="hero_title">حلول متكاملة لتأسيس وتشغيل أعمالك</h1>
-            <p class="mb-4" data-lang="hero_text">
+            <h1 class="fw-bold mb-3 lh-sm" data-lang="hero_title">حلول متكاملة لتأسيس وتشغيل أعمالك</h1>
+            <p class="mb-4 lh-base" data-lang="hero_text">
             من الفكرة إلى التنفيذ.. نقدم لك كل ما تحتاجه لنجاح عملك تحت سقف واحد بأعلى معايير الجودة والاحترافية
             </p>
             <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
-            <a href="#contact" class="btn btn-primary rounded-pill px-4" data-lang="request_consultation">اطلب استشارة مجانية</a>
-            <a href="#services" class="btn btn-secondary rounded-pill px-4" data-lang="our_services">تعرف على خدماتنا</a>
+            <a href="#contact" class="btn btn-primary" data-lang="request_consultation">اطلب استشارة مجانية</a>
+            <a href="#services" class="btn btn-secondary bg-transparent" data-lang="our_services">تعرف على خدماتنا</a>
             </div>
         </div>
 
@@ -99,38 +99,58 @@
             <p data-lang="about_subtitle">شركة متكاملة تقدم حلولاً شاملة لجميع احتياجات عملك</p>
         </div>
         
-        <div class="about-content">
+        <div class="about-content d-flex align-items-center column-gap-5">
+            <!--about text content -->
             <div class="about-text">
-                <h3 data-lang="about_heading">شركة مربع الامتياز المحدودة</h3>
-                <p data-lang="about_paragraph_1">تأسست شركة مربع الامتياز لتكون شريكك الأمثل في رحلة تأسيس وتشغيل أعمالك، حيث نقدم حزمة متكاملة من الخدمات التجارية، اللوجستية، الفنية والمحاسبية تحت سقف واحد.</p>
+                <h3 data-lang="about_heading" class="fw-bold mb-4 fs-3">شركة مربع الامتياز المحدودة</h3>
+                <p data-lang="about_paragraph_1" class="mb-3">تأسست شركة مربع الامتياز لتكون شريكك الأمثل في رحلة تأسيس وتشغيل أعمالك، حيث نقدم حزمة متكاملة من الخدمات التجارية، اللوجستية، الفنية والمحاسبية تحت سقف واحد.</p>
                 <p data-lang="about_paragraph_2">بخبرة فريقنا المحترف وأحدث التقنيات، نضمن لك الحصول على حلول مبتكرة تلبي جميع احتياجات عملك بدءاً من مرحلة التأسيس وحتى التشغيل والنجاح المستمر.</p>
                 
+                <!-- cards status -->
                 <div class="about-stats">
-                    <div class="stat-item">
-                        <i class="fas fa-calendar-alt"></i>
-                        <h4 class="counter" data-target="7">0</h4>
-                        <p data-lang="experience_years">سنوات خبرة</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-project-diagram"></i>
-                        <h4 class="counter" data-target="250">0</h4>
-                        <p data-lang="successful_projects">مشروع ناجح</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-users"></i>
-                        <h4 class="counter" data-target="50">0</h4>
-                        <p data-lang="professional_team">فريق محترف</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-smile"></i>
-                        <h4 class="counter" data-target="98">0</h4>
-                        <p data-lang="happy_clients">% عملاء راضون</p>
+                    <div class="row g-4 mt-4">
+                        <!-- card State 1 -->
+                        <div class="col-md-6">
+                            <div class="stat-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h4 class="counter" data-target="7">0</h4>
+                                <p data-lang="experience_years">سنوات خبرة</p>
+                            </div>
+                        </div>
+
+                        <!-- card State 2 -->
+                        <div class="col-md-6">
+                            <div class="stat-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <h4 class="counter" data-target="250">0</h4>
+                                <p data-lang="successful_projects">مشروع ناجح</p>
+                            </div>
+                        </div>
+
+                        <!-- card State 3 -->
+                        <div class="col-md-6">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <h4 class="counter" data-target="50">0</h4>
+                                <p data-lang="professional_team">فريق محترف</p>
+                            </div>
+                        </div>
+
+                        <!-- card State 4 -->
+                        <div class="col-md-6">
+                            <div class="stat-item">
+                                <i class="fas fa-smile"></i>
+                                <h4 class="counter" data-target="98">0</h4>
+                                <p data-lang="happy_clients">% عملاء راضون</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="فريق العمل">
+
+            <!-- about img-->
+            <div class="about-image position-relative">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="فريق العمل" class="img-fluid">
             </div>
         </div>
     </section>
@@ -150,7 +170,7 @@
                     <div class="carousel-item active">
                         <div class="row g-4">
                             <!-- Service 1 -->
-                            <div class="col-12  col-lg-4">
+                            <div class="col-12 col-lg-4">
                                 <div class="service-card h-100">
                                     <div class="service-img overflow-hidden">
                                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
@@ -171,7 +191,7 @@
                             </div>
                             
                             <!-- Service 2 -->
-                            <div class="col-12  col-lg-4">
+                            <div class="col-12 col-lg-4">
                                 <div class="service-card h-100">
                                     <div class="service-img overflow-hidden">
                                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
@@ -193,7 +213,7 @@
                             </div>
                             
                             <!-- Service 3 -->
-                            <div class="col-12  col-lg-4">
+                            <div class="col-12 col-lg-4">
                                 <div class="service-card h-100">
                                     <div class="service-img overflow-hidden">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8UeO_v800Dguy6LIMh2VruEu6eA_barXNw&s" 
@@ -245,7 +265,7 @@
                             </div>
                             
                             <!-- Service 5 -->
-                            <div class="col-12  col-lg-4">
+                            <div class="col-12 col-lg-4">
                                 <div class="service-card h-100">
                                     <div class="service-img overflow-hidden">
                                         <img src="https://plus.unsplash.com/premium_photo-1681691757922-6d8b206abedc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D" 
@@ -267,7 +287,7 @@
                             </div>
                             
                             <!-- Service 6 -->
-                            <div class="col-12  col-lg-4">
+                            <div class="col-12 col-lg-4">
                                 <div class="service-card h-100">
                                     <div class="service-img overflow-hidden">
                                         <img src="https://plus.unsplash.com/premium_photo-1661342406765-43d30862060b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIxfHx8ZW58MHx8fHx8" 
@@ -446,72 +466,86 @@
             <h2 data-lang="portfolio_title">أعمالنا السابقة</h2>
             <p data-lang="portfolio_subtitle">مقتطفات من آخر مشاريعنا على أرض الواقع وفق أعلى المعايير</p>
         </div>
-        
-        <div class="portfolio-grid">
-            <!-- Project 1 -->
-            <div class="portfolio-item" data-category="construction">
-                <img src="https://images.unsplash.com/photo-1586877668712-50e1782f8692?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="مشروع بناء">
-                <div class="portfolio-overlay">
-                    <h3 data-lang="portfolio_project_1_title">فيلا فاخرة</h3>
-                    <p data-lang="portfolio_project_1_desc">تنفيذ فيلا فاخرة بمساحة 600 م² في شمال الرياض</p>
+
+        <div class="row portfolio-grid g-4">
+            <div class="col-md-6">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="construction">
+                    <img src="https://images.unsplash.com/photo-1586877668712-50e1782f8692?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="مشروع بناء">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="portfolio_project_1_title">فيلا فاخرة</h3>
+                        <p data-lang="portfolio_project_1_desc">تنفيذ فيلا فاخرة بمساحة 600 م² في شمال الرياض</p>
+                    </div>
                 </div>
             </div>
+
+            <div class="col-md-6">
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1718220216044-006f43e3a9b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8JUQ4JUFGJUQ5JThBJUQ5JTgzJUQ5JTg4JUQ4JUIxJTIwJUQ5JTg1JUQ5JTgzJUQ4JUFBJUQ4JUE4JUQ5JThBJTIwJUQ4JUFBJUQ4JUI1JUQ5JTg1JUQ5JThBJUQ5JTg1JTIwJUQ5JTg4JUQ4JUFBJUQ5JTg2JUQ5JTgxJUQ5JThBJUQ4JUIwJTIwJUQ4JUFGJUQ5JThBJUQ5JTgzJUQ5JTg4JUQ4JUIxJTIwJUQ5JTg1JUQ5JTgzJUQ4JUFBJUQ4JUE4JTIwJUQ4JUI0JUQ4JUIxJUQ5JTgzJUQ4JUE5JTIwJUQ4JUFBJUQ5JTgyJUQ5JTg2JUQ5JThBJUQ4JUE5fGVufDB8fDB8fHww" alt="ديكور داخلي">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="portfolio_project_2_title">ديكور مكتبي</h3>
+                        <p data-lang="portfolio_project_2_desc">تصميم وتنفيذ ديكور مكتب شركة تقنية</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="it">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962751752-cbf6a170c837?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8JUQ5JTg2JUQ4JUI4JUQ4JUE3JUQ5JTg1JTIwJUQ4JUE1JUQ4JUFGJUQ4JUE3JUQ4JUIxJUQ4JUE5JTIwJUQ5JTg1JUQ4JUFBJUQ5JTgzJUQ4JUE3JUQ5JTg1JUQ5JTg0JTIwJUQ4JUFBJUQ4JUI3JUQ5JTg4JUQ5JThBJUQ4JUIxJTIwJUQ5JTg2JUQ4JUI4JUQ4JUE3JUQ5JTg1JTIwRVJQJTIwJUQ5JTg0JUQ5JTg1JUQ4JUI1JUQ5JTg2JUQ4JUI5JTIwJUQ4JUEzJUQ5JTg0JUQ4JUE4JUQ4JUE3JUQ5JTg2fGVufDB8fDB8fHww" alt="نظام IT">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="portfolio_project_3_title">نظام إدارة متكامل</h3>
+                        <p data-lang="portfolio_project_3_desc">تطوير نظام ERP لمصنع ألبان</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="logistics">
+                    <img src="https://img.freepik.com/premium-photo/container-trucks-parked-loading-dock-warehouse-freight-trucks-cargo-transport-logistics_36860-2075.jpg" alt="خدمات لوجستية">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="portfolio_project_4_title">نقل وتخزين</h3>
+                        <p data-lang="portfolio_project_4_desc" class="text-center px-5"> نقل شحنة من مستودع عميل في الرياض إلى جدة،<br/> شملت التغليف، التحميل، والتخزين  مع تتبع لحظي</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="Maintenance">
+                    <img src="https://images.unsplash.com/photo-1587351177685-2774615c6506?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVEOCVCNSVEOSU4QSVEOCVBNyVEOSU4NiVEOCVBOSUyMCVEOSU4MyVEOSU4NyVEOCVCMSVEOCVBOCVEOCVBNyVEOCVBNiVEOSU4QSVEOCVBOSUyMCVEOSU4NCVEOSU4NSVEOCVBRCVEOCVCNyVEOSU4NyUyMCVEOSU4MyVEOSU4NyVEOCVCMSVEOCVBOCVEOCVBNyVEOCVBMXxlbnwwfHwwfHx8MA%3D%3D" alt="مشروع بناء">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="portfolio_project_5_title">صيانه محطه كهرباء</h3>
+                        <p data-lang="portfolio_project_5_desc" class="text-center px-5">تنفيذ أعمال صيانة دورية وطارئة لمحطة كهرباء،<br/> شملت فحص الأنظمة، تنظيف الفلاتر </p>
+                    </div>
+                </div>
             
-            <!-- Project 2 -->
-            <div class="portfolio-item" data-category="interior">
-                <img src="https://images.unsplash.com/photo-1718220216044-006f43e3a9b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8JUQ4JUFGJUQ5JThBJUQ5JTgzJUQ5JTg4JUQ4JUIxJTIwJUQ5JTg1JUQ5JTgzJUQ4JUFBJUQ4JUE4JUQ5JThBJTIwJUQ4JUFBJUQ4JUI1JUQ5JTg1JUQ5JThBJUQ5JTg1JTIwJUQ5JTg4JUQ4JUFBJUQ5JTg2JUQ5JTgxJUQ5JThBJUQ4JUIwJTIwJUQ4JUFGJUQ5JThBJUQ5JTgzJUQ5JTg4JUQ4JUIxJTIwJUQ5JTg1JUQ5JTgzJUQ4JUFBJUQ4JUE4JTIwJUQ4JUI0JUQ4JUIxJUQ5JTgzJUQ4JUE5JTIwJUQ4JUFBJUQ5JTgyJUQ5JTg2JUQ5JThBJUQ4JUE5fGVufDB8fDB8fHww" alt="ديكور داخلي">
-                <div class="portfolio-overlay">
-                    <h3 data-lang="portfolio_project_2_title">ديكور مكتبي</h3>
-                    <p data-lang="portfolio_project_2_desc">تصميم وتنفيذ ديكور مكتب شركة تقنية</p>
+            </div>
+
+            <div class="col-md-6">
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="interior">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962950572-61c3b7b4d5ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8JUQ4JUFGJUQ5JThBJUQ5JTgzJUQ5JTg4JUQ4JUIxJTIwJUQ5JTg1JUQ4JUI3JUQ4JUI5JUQ5JTg1JTIwJUQ4JUFBJUQ4JUI1JUQ5JTg1JUQ5JThBJUQ5JTg1JTIwJUQ5JTg4JUQ4JUFBJUQ5JTg2JUQ5JTgxJUQ5JThBJUQ4JUIwJTIwJUQ4JUFGJUQ5JThBJUQ5JTgzJUQ5JTg4JUQ4JUIxJTIwJUQ5JTg1JUQ4JUI3JUQ4JUI5JUQ5JTg1JTIwJUQ4JUIxJUQ4JUE3JUQ5JTgyJUQ5JThEfGVufDB8fDB8fHww" alt="ديكور داخلي">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="portfolio_project_6_title">ديكور مطعم</h3>
+                        <p data-lang="portfolio_project_6_desc">تصميم وتنفيذ ديكور مطعم راقٍ</p>
+                    </div>
                 </div>
             </div>
-            
-            <!-- Project 3 -->
-            <div class="portfolio-item" data-category="it">
-                <img src="https://plus.unsplash.com/premium_photo-1661962751752-cbf6a170c837?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8JUQ5JTg2JUQ4JUI4JUQ4JUE3JUQ5JTg1JTIwJUQ4JUE1JUQ4JUFGJUQ4JUE3JUQ4JUIxJUQ4JUE5JTIwJUQ5JTg1JUQ4JUFBJUQ5JTgzJUQ4JUE3JUQ5JTg1JUQ5JTg0JTIwJUQ4JUFBJUQ4JUI3JUQ5JTg4JUQ5JThBJUQ4JUIxJTIwJUQ5JTg2JUQ4JUI4JUQ4JUE3JUQ5JTg1JTIwRVJQJTIwJUQ5JTg0JUQ5JTg1JUQ4JUI1JUQ5JTg2JUQ4JUI5JTIwJUQ4JUEzJUQ5JTg0JUQ4JUE4JUQ4JUE3JUQ5JTg2fGVufDB8fDB8fHww" alt="نظام IT">
-                <div class="portfolio-overlay">
-                    <h3 data-lang="portfolio_project_3_title">نظام إدارة متكامل</h3>
-                    <p data-lang="portfolio_project_3_desc">تطوير نظام ERP لمصنع ألبان</p>
-                </div>
-            </div>
-            
-            <!-- Project 4 -->
-            <div class="portfolio-item" data-category="logistics">
-                <img src="https://img.freepik.com/premium-photo/container-trucks-parked-loading-dock-warehouse-freight-trucks-cargo-transport-logistics_36860-2075.jpg" alt="خدمات لوجستية">
-                <div class="portfolio-overlay">
-                    <h3 data-lang="portfolio_project_4_title">نقل وتخزين</h3>
-                    <p data-lang="portfolio_project_4_desc" class="text-center px-5"> نقل شحنة من مستودع عميل في الرياض إلى جدة،<br/> شملت التغليف، التحميل، والتخزين  مع تتبع لحظي</p>
-                </div>
-            </div>
-            
-            <!-- Project 5 -->
-            <div class="portfolio-item" data-category="Maintenance">
-                <img src="https://images.unsplash.com/photo-1587351177685-2774615c6506?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVEOCVCNSVEOSU4QSVEOCVBNyVEOSU4NiVEOCVBOSUyMCVEOSU4MyVEOSU4NyVEOCVCMSVEOCVBOCVEOCVBNyVEOCVBNiVEOSU4QSVEOCVBOSUyMCVEOSU4NCVEOSU4NSVEOCVBRCVEOCVCNyVEOSU4NyUyMCVEOSU4MyVEOSU4NyVEOCVCMSVEOCVBOCVEOCVBNyVEOCVBMXxlbnwwfHwwfHx8MA%3D%3D" alt="مشروع بناء">
-                <div class="portfolio-overlay">
-                    <h3 data-lang="portfolio_project_5_title">صيانه محطه كهرباء</h3>
-                    <p data-lang="portfolio_project_5_desc" class="text-center px-5">تنفيذ أعمال صيانة دورية وطارئة لمحطة كهرباء،<br/> شملت فحص الأنظمة، تنظيف الفلاتر </p>
-                </div>
-            </div>
-            
-            <!-- Project 6 -->
-            <div class="portfolio-item" data-category="interior">
-                <img src="https://plus.unsplash.com/premium_photo-1661962950572-61c3b7b4d5ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8JUQ4JUFGJUQ5JThBJUQ5JTgzJUQ5JTg4JUQ4JUIxJTIwJUQ5JTg1JUQ4JUI3JUQ4JUI5JUQ5JTg1JTIwJUQ4JUFBJUQ4JUI1JUQ5JTg1JUQ5JThBJUQ5JTg1JTIwJUQ5JTg4JUQ4JUFBJUQ5JTg2JUQ5JTgxJUQ5JThBJUQ4JUIwJTIwJUQ4JUFGJUQ5JThBJUQ5JTgzJUQ5JTg4JUQ4JUIxJTIwJUQ5JTg1JUQ4JUI3JUQ4JUI5JUQ5JTg1JTIwJUQ4JUIxJUQ4JUE3JUQ5JTgyJUQ5JThEfGVufDB8fDB8fHww" alt="ديكور داخلي">
-                <div class="portfolio-overlay">
-                    <h3 data-lang="portfolio_project_6_title">ديكور مطعم</h3>
-                    <p data-lang="portfolio_project_6_desc">تصميم وتنفيذ ديكور مطعم راقٍ</p>
-                </div>
-            </div>
+
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="section why-us">
+    <section class="section why-us p-5">
         <div class="section-title">
             <h2 data-lang="why_title">لماذا تختار شركة مربع الامتياز؟</h2>
             <p data-lang="why_subtitle">نحن لسنا مجرد مزود خدمة، بل شريك نجاح يعتمد عليه</p>
         </div>
         
-        <div class="container">
+        <div class="container ">
             <div class="row g-4">
                 <!-- Point 1 -->
                 <div class="col-md-4">
@@ -680,109 +714,114 @@
             <p data-lang="contact_subtitle">نحن هنا لمساعدتك في أي استفسار أو طلب خدمة</p>
         </div>
         
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div class="contact-details">
-                        <h3 data-lang="contact_address_label">العنوان</h3>
-                        <p data-lang="contact_address_text">حي مدينة العمال شارع بلال بن رباح، مبنى اقدام، الدمام 32214، المملكة العربية السعودية</p>
-                        <a href="https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%B1%D8%A8%D8%B9+%D8%A7%D9%84%D8%A7%D9%85%D8%AA%D9%8A%D8%A7%D8%B2+%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9+Square+Excellence+Co.+Ltd.I%E2%80%AD/@26.4250158,50.1108512,17z/data=!3m1!4b1!4m6!3m5!1s0x3e49ef21b4ef21dd:0x164e9099f70c1615!8m2!3d26.4250158!4d50.1108512!16s%2Fg%2F11ld6nt9zx?entry=tts&g_ep=EgoyMDI1MDcwOS4wIPu8ASoASAFQAw%3D%3D&skid=7faf8c70-97df-4632-b501-2701f1f73437" target="_blank" data-lang="contact_address_map" class="text-primary">-(( عرض على الخريطة ))-</a>
+        <div class="contact-container ">
+           <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="contact-info d-flex flex-column mt-5 row-gap-4">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-details">
+                                <h3 data-lang="contact_address_label">العنوان</h3>
+                                <p data-lang="contact_address_text">حي مدينة العمال شارع بلال بن رباح، مبنى اقدام، الدمام 32214، المملكة العربية السعودية</p>
+                                <a href="https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%B1%D8%A8%D8%B9+%D8%A7%D9%84%D8%A7%D9%85%D8%AA%D9%8A%D8%A7%D8%B2+%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9+Square+Excellence+Co.+Ltd.I%E2%80%AD/@26.4250158,50.1108512,17z/data=!3m1!4b1!4m6!3m5!1s0x3e49ef21b4ef21dd:0x164e9099f70c1615!8m2!3d26.4250158!4d50.1108512!16s%2Fg%2F11ld6nt9zx?entry=tts&g_ep=EgoyMDI1MDcwOS4wIPu8ASoASAFQAw%3D%3D&skid=7faf8c70-97df-4632-b501-2701f1f73437" target="_blank" data-lang="contact_address_map" class="text-primary">-(( عرض على الخريطة ))-</a>
+                            </div>
+                        </div>
+                    
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="contact-details">
+                                <h3 data-lang="contact_phone_label">الهاتف / واتساب</h3>
+                                <a href="https://wa.me/966542051353" target="_blank">+966 54 205 1353</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="contact-details">
+                                <h3 data-lang="contact_email_label">البريد الإلكتروني</h3>
+                                <a href="mailto:N.dossary@ndotics.com" data-lang="contact_email_address">N.dossary@ndotics.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-regular fa-clock"></i>
+                            <div class="contact-details">
+                                <h3 data-lang="contact_hours_label">ساعات العمل</h3>
+                                <div data-lang="contact_hours_text">الأحد - الخميس : 8 صباحاً - 9 مساءً <br/>الجمعة - السبت : إجازة</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="contact-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div class="contact-details">
-                        <h3 data-lang="contact_phone_label">الهاتف / واتساب</h3>
-                        <a href="https://wa.me/966542051353" target="_blank">+966 54 205 1353</a>
+                <div class="col-md-6 ">
+                    <div class="contact-form">
+                        <form id="contactForm" action="https://formsubmit.co/N.dossary@ndotics.com" method="POST">
+                            <div class="form-group">
+                                <label for="name" data-lang="contact_form_fullname">الاسم الكامل</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-lang="contact_form_email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" data-lang="contact_form_phone">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service" data-lang="contact_form_service">الخدمة المطلوبة</label>
+                                <select id="service" class="form-control" required name="service">
+                                    <option value="" data-lang="contact_form_select" >اختر الخدمة</option>
+
+                                    <!-- Company Formation -->
+                                    <option value="company-formation" data-lang="contact_services_company_formation">تأسيس الشركات والمؤسسات والأنشطة التجارية</option>
+
+                                    <!-- Branding & Design -->
+                                    <option value="branding" data-lang="contact_services_branding">خدمات العلامة التجارية والتصميم البصري</option>
+
+                                    <!-- Accounting & Admin -->
+                                    <option value="accounting" data-lang="contact_services_accounting">الخدمات المحاسبية والإدارية</option>
+
+                                    <!-- IT Services -->
+                                    <option value="it" data-lang="contact_services_it">خدمات تكنولوجيا المعلومات</option>
+
+                                    <!-- Logistics -->
+                                    <option value="logistics" data-lang="contact_services_logistics">الخدمات اللوجستية والنقل والتخزين</option>
+
+                                    <!-- Construction -->
+                                    <option value="construction" data-lang="contact_services_construction_main">أعمال البناء والتشطيب</option>
+                                    <option value="construction" data-lang="contact_services_construction_metal">أعمال الحدادة والتلفيق</option>
+                                    <option value="construction" data-lang="contact_services_construction_aluminum">تصنيع المطابخ والأبواب والشبابيك من الألمنيوم</option>
+                                    <option value="construction" data-lang="contact_services_construction_decor">تصميم وتنفيذ الديكورات الداخلية</option>
+                                    <option value="construction" data-lang="contact_services_construction_facade">تنفيذ واجهات الزجاج والألمنيوم</option>
+                                    <option value="construction" data-lang="contact_services_construction_duct">تنفيذ أعمال الدكت وأنظمة التكييف</option>
+
+                                    <!-- Consulting -->
+                                    <option value="consulting" data-lang="contact_services_consulting">الاستشارات النظامية والتمثيل القانوني</option>
+
+                                    <!-- Maintenance -->
+                                    <option value="maintenance" data-lang="contact_services_maintenance">خدمات الصيانة الفنية</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" data-lang="contact_form_message">الرسالة</label>
+                                <textarea id="message" class="form-control" required name="message"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn text-light border-0" data-lang="contact_form_submit">إرسال الطلب</button>
+                        </form>
                     </div>
                 </div>
-                
-                <div class="contact-item">
-                    <i class="fa-regular fa-envelope"></i>
-                    <div class="contact-details">
-                        <h3 data-lang="contact_email_label">البريد الإلكتروني</h3>
-                        <a href="mailto:N.dossary@ndotics.com" data-lang="contact_email_address">N.dossary@ndotics.com</a>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <i class="fa-regular fa-clock"></i>
-                    <div class="contact-details">
-                        <h3 data-lang="contact_hours_label">ساعات العمل</h3>
-                        <div data-lang="contact_hours_text">الأحد - الخميس : 8 صباحاً - 5 مساءً <br/>الجمعة - السبت : إجازة</div>
-                    </div>
-                </div>
-
-            </div>
-            
-            <div class="contact-form">
-                <form id="contactForm" action="https://formsubmit.co/N.dossary@ndotics.com" method="POST">
-                    <div class="form-group">
-                        <label for="name" data-lang="contact_form_fullname">الاسم الكامل</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email" data-lang="contact_form_email">البريد الإلكتروني</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone" data-lang="contact_form_phone">رقم الهاتف</label>
-                        <input type="tel" id="phone" name="phone" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="service" data-lang="contact_form_service">الخدمة المطلوبة</label>
-                        <select id="service" class="form-control" required name="service">
-                            <option value="" data-lang="contact_form_select" >اختر الخدمة</option>
-
-                            <!-- Company Formation -->
-                            <option value="company-formation" data-lang="contact_services_company_formation">تأسيس الشركات والمؤسسات والأنشطة التجارية</option>
-
-                            <!-- Branding & Design -->
-                            <option value="branding" data-lang="contact_services_branding">خدمات العلامة التجارية والتصميم البصري</option>
-
-                            <!-- Accounting & Admin -->
-                            <option value="accounting" data-lang="contact_services_accounting">الخدمات المحاسبية والإدارية</option>
-
-                            <!-- IT Services -->
-                            <option value="it" data-lang="contact_services_it">خدمات تكنولوجيا المعلومات</option>
-
-                            <!-- Logistics -->
-                            <option value="logistics" data-lang="contact_services_logistics">الخدمات اللوجستية والنقل والتخزين</option>
-
-                            <!-- Construction -->
-                            <option value="construction" data-lang="contact_services_construction_main">أعمال البناء والتشطيب</option>
-                            <option value="construction" data-lang="contact_services_construction_metal">أعمال الحدادة والتلفيق</option>
-                            <option value="construction" data-lang="contact_services_construction_aluminum">تصنيع المطابخ والأبواب والشبابيك من الألمنيوم</option>
-                            <option value="construction" data-lang="contact_services_construction_decor">تصميم وتنفيذ الديكورات الداخلية</option>
-                            <option value="construction" data-lang="contact_services_construction_facade">تنفيذ واجهات الزجاج والألمنيوم</option>
-                            <option value="construction" data-lang="contact_services_construction_duct">تنفيذ أعمال الدكت وأنظمة التكييف</option>
-
-                            <!-- Consulting -->
-                            <option value="consulting" data-lang="contact_services_consulting">الاستشارات النظامية والتمثيل القانوني</option>
-
-                            <!-- Maintenance -->
-                            <option value="maintenance" data-lang="contact_services_maintenance">خدمات الصيانة الفنية</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message" data-lang="contact_form_message">الرسالة</label>
-                        <textarea id="message" class="form-control" required name="message"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn" data-lang="contact_form_submit">إرسال الطلب</button>
-                </form>
-            </div>
+           </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="text-light">
         <div class="footer-container">
             <div class="footer-col">
                 <h3 data-lang="footer_about_title">عن الشركة</h3>
@@ -817,7 +856,7 @@
                 </ul>
             </div>  
         
-            <div class="copyright" data-lang="footer_rights">
+            <div class="copyright text-center pt-4 pb-1" data-lang="footer_rights">
                 <p>&copy; 2025 شركة مربع الامتياز المحدودة. جميع الحقوق محفوظة.</p>
             </div>
     </footer>
