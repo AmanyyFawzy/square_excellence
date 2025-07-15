@@ -175,18 +175,11 @@
   "faq_cta": "لم تجد جوابًا لسؤالك؟",
   "faq_cta_link": "تواصل معنا مباشرة",
 
-  "clients_title": "آراء عملائنا",
-  "clients_subtitle": "ما يقولونه عن خدماتنا",
-
-  "testimonial_1_text": "لقد ساعدتني شركة مربع الامتياز في تأسيس شركتي الجديدة بكل احترافية وسرعة، ووفرت علي الكثير من الوقت والجهد في الإجراءات النظامية.",
-  "testimonial_1_author": "أحمد السليم",
-  "testimonial_1_role": "عميل",
-
   "contact_title": "اتصل بنا",
   "contact_subtitle": "نحن هنا لمساعدتك في أي استفسار أو طلب خدمة",
 
   "contact_address_label": "العنوان",
-  "contact_address_text": "شارع بلال بن رباح، مبنى اقدام، الدمام 32214، المملكة العربية السعودية",
+  "contact_address_text": "حي مدينة العمال شارع بلال بن رباح، مبنى اقدام، الدمام 32214، المملكة العربية السعودية",
   "contact_address_map": "-(( عرض على الخريطة ))-",
 
   "contact_phone_label": "الهاتف / واتساب",
@@ -236,10 +229,6 @@
   "footer_service_it": "تكنولوجيا المعلومات",
   "footer_service_logistics": "الخدمات اللوجستية",
   "footer_service_construction": "أعمال البناء",
-
-  "footer_newsletter_title": "النشرة البريدية",
-  "footer_newsletter_text": "اشترك في نشرتنا البريدية لتصلك آخر عروضنا وأخبارنا.",
-  "footer_newsletter_placeholder": "بريدك الإلكتروني",
 
   "footer_rights": " شركة مربع الامتياز المحدودة.© 2025 جميع الحقوق محفوظة."
 }

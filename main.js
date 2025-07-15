@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Sticky Navbar
+
+  // Navbar animation when scrolling
   const navbar = document.querySelector(".navbar");
   window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
@@ -38,80 +39,57 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Counter Animation
-  const counters = document.querySelectorAll(".counter");
-  const speed = 200;
+  const counters = document.querySelectorAll('.counter');
 
-  function animateCounters() {
-    counters.forEach((counter) => {
-      const target = +counter.getAttribute("data-target");
-      const count = +counter.innerText;
-      const increment = target / speed;
+  function animateCounter(counter) {
+    const target = +counter.getAttribute('data-target');
+    const speed = 100;
+    const increment = Math.ceil(target / speed);
+    let count = 0;
 
+    function update() {
       if (count < target) {
-        counter.innerText = Math.ceil(count + increment);
-        setTimeout(animateCounters, 1);
+        count += increment;
+        counter.innerText = count;
+        setTimeout(update, 20);
       } else {
-        counter.innerText = target;
+        counter.innerText = target + "+";
       }
-    });
+    }
+
+    update();
   }
 
-  // Start counters when section is in view
-  const aboutSection = document.getElementById("about");
-  const observer = new IntersectionObserver(
-    (entries) => {
-      if (entries[0].isIntersecting) {
-        animateCounters();
-        observer.unobserve(aboutSection);
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counters = entry.target.querySelectorAll('.counter');
+        counters.forEach(counter => {
+          // Reset count to 0 before starting
+          counter.innerText = "0";
+          animateCounter(counter);
+        });
       }
-    },
-    { threshold: 0.5 }
-  );
+    });
+  }, {
+    threshold: 0.5, // animation start when appear 50% from screen
+  });
 
+  const aboutSection = document.querySelector('#about');
   if (aboutSection) {
     observer.observe(aboutSection);
   }
 
-  // Portfolio Filter
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  const portfolioItems = document.querySelectorAll(".portfolio-item");
-
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      // Remove active class from all buttons
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-
-      // Add active class to clicked button
-      button.classList.add("active");
-
-      const filterValue = button.getAttribute("data-filter");
-
-      portfolioItems.forEach((item) => {
-        if (
-          filterValue === "all" ||
-          item.getAttribute("data-category") === filterValue
-        ) {
-          item.style.display = "block";
-        } else {
-          item.style.display = "none";
-        }
-      });
-    });
-  });
-
+  
   // Form Submission
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      // Here you would typically send the form data to a server
-      // For demonstration, we'll just show an alert
       alert("شكراً لتواصلكم! سنعود إليكم في أقرب وقت.");
-      this.reset();
     });
   }
 
+  // Toggle Language
   const toggleLangBtn = document.getElementById("toggle-lang-btn");
   let currentLang = localStorage.getItem("language") || "ar";
 
@@ -145,12 +123,11 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => console.error("Error loading language file:", error));
   }
-
   toggleLangBtn.addEventListener("click", function () {
     const newLang = currentLang === "ar" ? "en" : "ar";
     loadLanguage(newLang);
   });
 
-  // تحميل اللغة أول مرة
+  // load lang stored in localStorage
   loadLanguage(currentLang);
 });

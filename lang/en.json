@@ -169,17 +169,12 @@
 
   "faq_cta": "Didn't find the answer you're looking for?",
   "faq_cta_link": "Contact us directly",
-  "clients_title": "What Our Clients Say",
-  "clients_subtitle": "Their thoughts about our services",
 
-  "testimonial_1_text": "SQUARE EXCELLENCE helped me establish my new company with great professionalism and speed, saving me a lot of time and effort with the legal procedures.",
-  "testimonial_1_author": "Ahmed Al-Saleem",
-  "testimonial_1_role": "Client",
   "contact_title": "Contact Us",
   "contact_subtitle": "We’re here to help with any inquiry or service request.",
 
   "contact_address_label": "Address",
-  "contact_address_text": "Bilal Bin Rabah Street, Iqdam Building, Dammam 32214, Saudi Arabia",
+  "contact_address_text": "Hayy Madinat Al-Ommal, Bilal Bin Rabah Street, Aqdam Building, Dammam 32214, Saudi Arabia",
   "contact_address_map": "-(( View on Map ))-",
 
   "contact_phone_label": "Phone / WhatsApp",
@@ -228,10 +223,6 @@
   "footer_service_it": "Information Technology",
   "footer_service_logistics": "Logistics Services",
   "footer_service_construction": "Construction Services",
-
-  "footer_newsletter_title": "Newsletter",
-  "footer_newsletter_text": "Subscribe to our newsletter for the latest offers and updates.",
-  "footer_newsletter_placeholder": "Your email address",
 
   "footer_rights": "Square Excellence Co. Ltd. © 2025  All rights reserved."
 }
