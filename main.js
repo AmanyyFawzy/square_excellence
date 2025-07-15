@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
               element.placeholder = data[key];
             } else {
-              element.textContent = data[key];
+              element.innerHTML = data[key];
             }
           }
         });
